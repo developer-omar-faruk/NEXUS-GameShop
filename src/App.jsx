@@ -1,18 +1,10 @@
-import { useState, useEffect, useRef, useCallback } from "react";
-import { motion, AnimatePresence, useScroll, useTransform, useSpring } from "framer-motion";
-import {
-  FiMenu, FiX, FiSearch, FiPlay, FiArrowRight, FiStar,
-  FiHeart, FiUsers, FiAward, FiMonitor, FiTrendingUp,
-  FiCalendar, FiMessageCircle, FiMail, FiPhone,
-  FiChevronLeft, FiChevronRight, FiDownload, FiShield,
-  FiZap, FiGlobe, FiTwitter, FiYoutube, FiInstagram,
-  FiGithub, FiLinkedin, FiBookmark, FiEye, FiCpu,
-  FiTarget, FiVolume2, FiWifi, FiChevronUp
-} from "react-icons/fi";
+import { useState, useEffect, useCallback } from "react";
+import { AnimatePresence } from "framer-motion";
 
 // ------Components-------
 import Navbar from "./components/Navbar";
 import LoadingScreen from "./components/LoadingScreen";
+import Footer from "./components/Footer";
 
 
 export default function App() {
@@ -62,10 +54,10 @@ export default function App() {
             <motion.main key={activePage} initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -10 }} transition={{ duration: 0.3 }}>
               {renderPage()}
             </motion.main>
-          </AnimatePresence>
+          </AnimatePresence> */}
 
           <Footer setActivePage={setActivePage} />
-          <BackToTop /> */}
+          {/* <BackToTop /> */}
         </>
       )}
     </div>

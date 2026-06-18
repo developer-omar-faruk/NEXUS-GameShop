@@ -1,10 +1,10 @@
+import {NAV_LINKS} from '../data'
+
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import {
   FiZap, FiSearch, FiHeart, FiMonitor, FiMenu, FiX
 } from "react-icons/fi";
-
-const NAV_LINKS = ["Home", "Games", "Esports", "News", "About", "Contact"];
 
 const cn = (...classes) => classes.filter(Boolean).join(" ");
 
