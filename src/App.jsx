@@ -5,6 +5,7 @@ import { AnimatePresence } from "framer-motion";
 import Navbar from "./components/Navbar";
 import LoadingScreen from "./components/LoadingScreen";
 import Footer from "./components/Footer";
+import CustomCursor from "./components/CustomCursor";
 
 
 export default function App() {
@@ -43,8 +44,8 @@ export default function App() {
 
       {!loading && (
         <>
-          {/* <CustomCursor />
-          <ScrollProgress />
+          <CustomCursor />
+          {/* <ScrollProgress />
           <ParticleField /> */}
 
           <Navbar activePage={activePage} setActivePage={setActivePage} wishlist={wishlist} setSearchOpen={setSearchOpen} />
