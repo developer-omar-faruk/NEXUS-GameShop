@@ -8,6 +8,7 @@ import Footer from "./components/Footer";
 import CustomCursor from "./components/CustomCursor";
 import ScrollProgress from "./components/ScrollProgress";
 import ParticleField from "./components/ParticleField";
+import BackToTop from "./components/BackToTop";
 
 
 export default function App() {
@@ -60,7 +61,7 @@ export default function App() {
           </AnimatePresence> */}
 
           <Footer setActivePage={setActivePage} />
-          {/* <BackToTop /> */}
+          <BackToTop />
         </>
       )}
     </div>
