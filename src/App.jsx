@@ -1,5 +1,5 @@
 import { useState, useEffect, useCallback } from "react";
-import { AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 
 // ------Components-------
 import Navbar from "./components/Navbar";
@@ -9,6 +9,9 @@ import CustomCursor from "./components/CustomCursor";
 import ScrollProgress from "./components/ScrollProgress";
 import ParticleField from "./components/ParticleField";
 import BackToTop from "./components/BackToTop";
+
+// ------Pages-------
+import HomePage from "./pages/HomePage";
 
 
 export default function App() {
@@ -52,13 +55,13 @@ export default function App() {
           <ParticleField />
 
           <Navbar activePage={activePage} setActivePage={setActivePage} wishlist={wishlist} setSearchOpen={setSearchOpen} />
-          {/* <SearchModal open={searchOpen} onClose={() => setSearchOpen(false)} setActivePage={setActivePage} setSelectedGame={setSelectedGame} />
+          {/* <SearchModal open={searchOpen} onClose={() => setSearchOpen(false)} setActivePage={setActivePage} setSelectedGame={setSelectedGame} /> */}
 
           <AnimatePresence mode="wait">
             <motion.main key={activePage} initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -10 }} transition={{ duration: 0.3 }}>
               {renderPage()}
             </motion.main>
-          </AnimatePresence> */}
+          </AnimatePresence>
 
           <Footer setActivePage={setActivePage} />
           <BackToTop />
