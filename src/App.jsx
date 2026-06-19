@@ -6,6 +6,7 @@ import Navbar from "./components/Navbar";
 import LoadingScreen from "./components/LoadingScreen";
 import Footer from "./components/Footer";
 import CustomCursor from "./components/CustomCursor";
+import ScrollProgress from "./components/ScrollProgress";
 
 
 export default function App() {
@@ -45,8 +46,8 @@ export default function App() {
       {!loading && (
         <>
           <CustomCursor />
-          {/* <ScrollProgress />
-          <ParticleField /> */}
+          <ScrollProgress />
+          {/* <ParticleField /> */}
 
           <Navbar activePage={activePage} setActivePage={setActivePage} wishlist={wishlist} setSearchOpen={setSearchOpen} />
           {/* <SearchModal open={searchOpen} onClose={() => setSearchOpen(false)} setActivePage={setActivePage} setSelectedGame={setSelectedGame} />
