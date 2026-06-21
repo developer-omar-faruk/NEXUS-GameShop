@@ -9,7 +9,7 @@ import {
 //
 export const NAV_LINKS = ["Home", "Games", "Esports", "News", "About", "Contact"];
 
-//----Navbar, HomePage/Categories----
+//----Navbar, HomePage/Categories Data----
 
 export const CATEGORIES = [
   { id: 1, name: "Action",    icon: FiZap,       color: "from-red-500 to-orange-500",    count: 240 },
@@ -71,5 +71,31 @@ export const GAMES = Array.from({ length: 40 }, (_, i) => {
       rating: (4 + Math.random()).toFixed(1),
       text: ["Absolutely breathtaking gameplay loop. Can't stop playing!","The best in its genre, period. Highly recommend.","Stunning visuals and tight controls. A must-buy."][j]
     }))
+  };
+});
+
+
+// ----HomePage/EsportsHome Data----
+
+export const ESPORTS_EVENTS = Array.from({ length: 15 }, (_, i) => {
+  const names = [
+    "World Championship 2025","Cyber League Season 8","Global Invitational",
+    "Pro Series Grand Final","Masters Circuit","Champions Cup",
+    "Apex Invitational","Elite Tournament","Digital Olympics","Battle Royale World Cup",
+    "FPS World Finals","Strategy Masters","Racing Grand Prix","Combat Championship","Shadow Cup"
+  ];
+  const games = ["Cyber Nexus 2077","Void Hunters","Neon Strike","Phantom Protocol","Astral Conquest"];
+  const statuses = ["Live","Upcoming","Concluded"];
+  const prizes = ["$500,000","$1,000,000","$250,000","$750,000","$2,000,000"];
+  return {
+    id: i + 1,
+    name: names[i],
+    game: games[i % games.length],
+    prizePool: prizes[i % prizes.length],
+    teams: 8 + (i % 16),
+    startDate: `2025-0${(i % 9) + 1}-${String((i % 28) + 1).padStart(2,"0")}`,
+    status: statuses[i % statuses.length],
+    location: ["Online","Los Angeles","Seoul","London","Tokyo","Berlin"][i % 6],
+    banner: `https://picsum.photos/seed/esport${i + 1}/600/300`,
   };
 });
