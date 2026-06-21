@@ -9,6 +9,8 @@ import {
 //
 export const NAV_LINKS = ["Home", "Games", "Esports", "News", "About", "Contact"];
 
+//----Navbar, HomePage/Categories----
+
 export const CATEGORIES = [
   { id: 1, name: "Action",    icon: FiZap,       color: "from-red-500 to-orange-500",    count: 240 },
   { id: 2, name: "RPG",       icon: FiStar,      color: "from-purple-500 to-pink-500",   count: 185 },
