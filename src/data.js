@@ -99,3 +99,32 @@ export const ESPORTS_EVENTS = Array.from({ length: 15 }, (_, i) => {
     banner: `https://picsum.photos/seed/esport${i + 1}/600/300`,
   };
 });
+
+
+// ----HomePage/NewsSection Data----
+
+export const NEWS = Array.from({ length: 20 }, (_, i) => {
+  const titles = [
+    "Cyber Nexus 2077 Expansion Drops Next Month","Shadow Realm Online Hits 10M Players",
+    "Epic Games Store Announces Massive Sale","Esports Championship 2025 Draws Record Viewers",
+    "New RTX 5090 Benchmarks Revealed","PlayStation 6 Specs Officially Confirmed",
+    "Indie Dev Spotlight: Abyss Crawler","Game Pass Adds 30 Titles in January",
+    "Quantum Breach Breaks Steam Records","Riot Games New IP Announced",
+    "Xbox Series X Pro Confirmed for 2025","Unreal Engine 6 Demo Stuns Community",
+    "Best FPS Games of 2025 Ranked","Switch 2 Launch Titles Revealed",
+    "Steam Deck 2 Announced with OLED Display","Mobile Gaming Revenue Surpasses Console",
+    "Top 10 Most Anticipated Games of 2026","Halo Returns with New Studio",
+    "From Software New Project Teased","Cyberpunk Sequel in Development"
+  ];
+  const cats = ["Industry","Updates","Hardware","Esports","Reviews"];
+  return {
+    id: i + 1,
+    title: titles[i],
+    category: cats[i % cats.length],
+    date: `${["Jan","Feb","Mar","Apr","May","Jun"][i % 6]} ${10 + i}, 2025`,
+    thumbnail: `https://picsum.photos/seed/news${i + 1}/600/400`,
+    excerpt: "The gaming industry continues to evolve at breakneck speed, bringing new experiences and innovations that redefine what interactive entertainment can be.",
+    readTime: `${2 + (i % 6)} min read`,
+    featured: i < 3,
+  };
+});

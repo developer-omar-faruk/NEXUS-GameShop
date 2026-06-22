@@ -3,6 +3,7 @@ import FeaturedGames from "./homePage/FeaturedGames";
 import TrendingGames from "./homePage/TrendingGames";
 import Categories from "./homePage/Categories";
 import EsportsHome from "./homePage/EsportsHome";
+import NewsSection from "./homePage/NewsSection";
 
 function HomePage({ setActivePage, setSelectedGame, wishlist, onWishlist }) {
   return (
@@ -12,6 +13,7 @@ function HomePage({ setActivePage, setSelectedGame, wishlist, onWishlist }) {
       <TrendingGames setActivePage={setActivePage} setSelectedGame={setSelectedGame} wishlist={wishlist} onWishlist={onWishlist} />
       <Categories setActivePage={setActivePage} />
       <EsportsHome setActivePage={setActivePage} />
+      <NewsSection setActivePage={setActivePage} />
       
     </div>
   );
