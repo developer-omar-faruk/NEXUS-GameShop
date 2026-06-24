@@ -1,6 +1,7 @@
 import {
   FiZap, FiStar, FiTarget, FiGlobe, FiShield,
-  FiCpu, FiVolume2, FiAward,
+  FiCpu, FiVolume2, FiAward, FiUsers, FiMonitor,
+  FiMessageCircle
 } from "react-icons/fi";
 
 
@@ -128,3 +129,13 @@ export const NEWS = Array.from({ length: 20 }, (_, i) => {
     featured: i < 3,
   };
 });
+
+
+// ----HomePage/CommunitySection Data----
+
+export const COMMUNITY_STATS = [
+  { label: "Active Players",   value: "12.4M", icon: FiUsers,      color: "text-cyan-400"   },
+  { label: "Games Available",  value: "4,200+",icon: FiMonitor,    color: "text-purple-400" },
+  { label: "Tournaments Won",  value: "8,900", icon: FiAward,      color: "text-pink-400"   },
+  { label: "Discord Members",  value: "2.1M",  icon: FiMessageCircle,color:"text-blue-400"  },
+];
