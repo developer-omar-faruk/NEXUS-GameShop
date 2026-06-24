@@ -13,11 +13,13 @@ import BackToTop from "./components/BackToTop";
 // ------Pages-------
 import HomePage from "./pages/HomePage";
 import GamesPage from "./pages/GamesPage";
+import GameDetailsPage from "./pages/GameDetailsPage";
+
 
 
 export default function App() {
   const [loading, setLoading]         = useState(true);
-  const [activePage, setActivePage]   = useState("Games");
+  const [activePage, setActivePage]   = useState("Home");
   const [selectedGame, setSelectedGame] = useState(null);
   const [wishlist, setWishlist]       = useState([]);
   const [searchOpen, setSearchOpen]   = useState(false);

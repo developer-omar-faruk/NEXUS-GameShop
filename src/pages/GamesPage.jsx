@@ -69,5 +69,3 @@ function GamesPage({ setActivePage, setSelectedGame, wishlist, onWishlist }) {
 }
 
 export default GamesPage
-
-// test
