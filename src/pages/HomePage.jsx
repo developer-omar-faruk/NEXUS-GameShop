@@ -5,6 +5,7 @@ import Categories from "./homePage/Categories";
 import EsportsHome from "./homePage/EsportsHome";
 import NewsSection from "./homePage/NewsSection";
 import CommunitySection from "./homePage/CommunitySection";
+import Testimonials from "./homePage/Testimonials";
 
 function HomePage({ setActivePage, setSelectedGame, wishlist, onWishlist }) {
   return (
@@ -16,6 +17,7 @@ function HomePage({ setActivePage, setSelectedGame, wishlist, onWishlist }) {
       <EsportsHome setActivePage={setActivePage} />
       <NewsSection setActivePage={setActivePage} />
       <CommunitySection/>
+      <Testimonials/>
       
     </div>
   );

@@ -139,3 +139,24 @@ export const COMMUNITY_STATS = [
   { label: "Tournaments Won",  value: "8,900", icon: FiAward,      color: "text-pink-400"   },
   { label: "Discord Members",  value: "2.1M",  icon: FiMessageCircle,color:"text-blue-400"  },
 ];
+
+
+// ----HomePage/TestimonialSection Data----
+
+export const TESTIMONIALS = Array.from({ length: 10 }, (_, i) => {
+  const names = ["xXProSlayer","NightOwlGamer","PixelKnight","CyberViper","StarForge",
+    "ZeroGravity","NeonShadow","VoidRunner","PhantomAce","StormRider"];
+  const texts = [
+    "This platform completely changed how I experience gaming. The UI is next level!",
+    "Never going back to any other gaming platform. The community here is incredible.",
+    "The esports coverage is unmatched. Live stats, real-time updates — absolutely elite.",
+    "Found so many hidden gems through the recommendation system. 10/10.",
+    "The game discovery features are insane. My backlog has never been bigger!",
+    "Smooth, fast, and gorgeous. This is what a gaming platform should look like.",
+    "The tournament section got me into competitive gaming. Life changing honestly.",
+    "Best deals on games, best UI, best community. What more do you want?",
+    "The news section keeps me updated on everything. My go-to gaming hub.",
+    "Played my first esports match through this platform. Now I'm hooked forever."
+  ];
+  return { id: i + 1, name: names[i], avatar: `https://picsum.photos/seed/user${i + 1}/60/60`, text: texts[i], rating: 5, game: GAMES[i].title };
+});
