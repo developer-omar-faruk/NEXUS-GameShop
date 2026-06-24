@@ -76,7 +76,7 @@ export const GAMES = Array.from({ length: 40 }, (_, i) => {
 });
 
 
-// ----HomePage/EsportsHome Data----
+// ----HomePage/EsportsHome, EsportsPage Data----
 
 export const ESPORTS_EVENTS = Array.from({ length: 15 }, (_, i) => {
   const names = [
@@ -159,4 +159,23 @@ export const TESTIMONIALS = Array.from({ length: 10 }, (_, i) => {
     "Played my first esports match through this platform. Now I'm hooked forever."
   ];
   return { id: i + 1, name: names[i], avatar: `https://picsum.photos/seed/user${i + 1}/60/60`, text: texts[i], rating: 5, game: GAMES[i].title };
+});
+
+
+// ----EsportsPage Data----
+
+export const TEAMS = Array.from({ length: 10 }, (_, i) => {
+  const names = ["Team Phoenix","Neon Wolves","Cyber Dragons","Shadow Squad","Iron Titans",
+    "Void Reapers","Nova Force","Phantom 5","Galactic Raiders","Storm Breakers"];
+  const regions = ["NA","EU","APAC","KR","BR","CIS"];
+  return {
+    id: i + 1,
+    name: names[i],
+    region: regions[i % regions.length],
+    rank: i + 1,
+    wins: 50 - i * 3,
+    losses: 5 + i * 2,
+    points: 2500 - i * 180,
+    logo: `https://picsum.photos/seed/team${i + 1}/80/80`,
+  };
 });

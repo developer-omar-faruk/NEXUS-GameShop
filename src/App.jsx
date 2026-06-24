@@ -14,6 +14,7 @@ import BackToTop from "./components/BackToTop";
 import HomePage from "./pages/HomePage";
 import GamesPage from "./pages/GamesPage";
 import GameDetailsPage from "./pages/GameDetailsPage";
+import EsportsPage from "./pages/EsportsPage";
 
 
 
