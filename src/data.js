@@ -102,7 +102,7 @@ export const ESPORTS_EVENTS = Array.from({ length: 15 }, (_, i) => {
 });
 
 
-// ----HomePage/NewsSection Data----
+// ----HomePage/NewsSection, NewsPage Data----
 
 export const NEWS = Array.from({ length: 20 }, (_, i) => {
   const titles = [
