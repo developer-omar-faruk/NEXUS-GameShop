@@ -16,12 +16,13 @@ import GamesPage from "./pages/GamesPage";
 import GameDetailsPage from "./pages/GameDetailsPage";
 import EsportsPage from "./pages/EsportsPage";
 import NewsPage from "./pages/NewsPage";
+import AboutPage from "./pages/AboutPage";
 
 
 
 export default function App() {
   const [loading, setLoading]         = useState(true);
-  const [activePage, setActivePage]   = useState("News");
+  const [activePage, setActivePage]   = useState("About");
   const [selectedGame, setSelectedGame] = useState(null);
   const [wishlist, setWishlist]       = useState([]);
   const [searchOpen, setSearchOpen]   = useState(false);
