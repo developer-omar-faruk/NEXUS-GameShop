@@ -26,7 +26,7 @@ export const CATEGORIES = [
 ];
 
 
-// ----HomePage/Hero, HomePage/FeaturedGames, HomePage/TrendingGames Data ----
+// ----HomePage/Hero, HomePage/FeaturedGames, HomePage/TrendingGames, WishlistPage Data ----
 
 export const GAMES = Array.from({ length: 40 }, (_, i) => {
   const titles = [

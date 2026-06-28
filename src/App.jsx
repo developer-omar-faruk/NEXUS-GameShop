@@ -18,6 +18,7 @@ import EsportsPage from "./pages/EsportsPage";
 import NewsPage from "./pages/NewsPage";
 import AboutPage from "./pages/AboutPage";
 import ContactPage from "./pages/ContactPage";
+import WishlistPage from "./pages/WishlistPage";
 
 
 
