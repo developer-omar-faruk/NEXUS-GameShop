@@ -10,7 +10,7 @@ import {
 //
 export const NAV_LINKS = ["Home", "Games", "Esports", "News", "About", "Contact"];
 
-//----Navbar, HomePage/Categories, GamesPage Data----
+//----Navbar, SearchModal component, HomePage/Categories, GamesPage Data----
 
 export const CATEGORIES = [
   { id: 1, name: "Action",    icon: FiZap,       color: "from-red-500 to-orange-500",    count: 240 },
@@ -26,7 +26,7 @@ export const CATEGORIES = [
 ];
 
 
-// ----HomePage/Hero, HomePage/FeaturedGames, HomePage/TrendingGames, WishlistPage Data ----
+// ----HomePage/Hero, SearchModal, HomePage/FeaturedGames, HomePage/TrendingGames, WishlistPage Data ----
 
 export const GAMES = Array.from({ length: 40 }, (_, i) => {
   const titles = [

@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 
 // ------Components-------
 import Navbar from "./components/Navbar";
+import SearchModal from "./components/SearchModal";
 import LoadingScreen from "./components/LoadingScreen";
 import Footer from "./components/Footer";
 import CustomCursor from "./components/CustomCursor";
@@ -63,7 +64,7 @@ export default function App() {
           <ParticleField />
 
           <Navbar activePage={activePage} setActivePage={setActivePage} wishlist={wishlist} setSearchOpen={setSearchOpen} />
-          
+          <SearchModal open={searchOpen} onClose={() => setSearchOpen(false)} setActivePage={setActivePage} setSelectedGame={setSelectedGame} />
 
           <AnimatePresence mode="wait">
             <motion.main key={activePage} initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -10 }} transition={{ duration: 0.3 }}>
